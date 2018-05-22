@@ -19,13 +19,25 @@ def infomake():
     global case
     global info
     print("What do you want to find out about",case)
-    print("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
-    info = input("What do you want to know? ")	
+    print(""""Do you want to know
+    Years and Justice
+    Details
+    Decision
+    Vote Totals
+    Why we care
+    Constitutional Provisions?
+    If you want a new case type Done ")"""
+    info = input("What do you want to know? ")
+    clear()
+
+
+
 def marburyvmadison():
     global info
+    global case
+    info = ""
     while info != "Done":
-        print("What do you want to find out about Marbury v Madison")
-        info = input("Do you want to know Years and Justice,  Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
+        infomake()
         input()
         clear()
         if info == "Years and Justice":
@@ -52,12 +64,16 @@ def marburyvmadison():
             wait()
         else:
             print("That's not an option IDIOT")
+
+
+
+
 def mccullochvmaryland():
     global info
+    global case
     info = ""
     while info != "Done":
-        print("What do you want to find out about McCulloch v. Maryland")
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or consitutuional provisions? If you want a new case type Done ")
+        infomake()
         if info == "Years and Justice":
             print("Started arguing on Feb 22 2019 and was Decided March 6 1819. In the Marshall Court")
             wait()
@@ -78,13 +94,16 @@ def mccullochvmaryland():
             wait()
         else:
             print("That's not a useable Command")
+
+
+
+
 def gibbonsvogden():
     global info
     info = ""
     while info != "Done":
         global case
-        print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
+        infomake()
         if info == "Years and Justice":
             print("It was argued Feb 4 - 9 1824 and was decided March 2 1824 in the Marshall Court")
             wait()
@@ -107,13 +126,17 @@ def gibbonsvogden():
             print("That's not a valid answer")
             wait()
     infomake()
+
+
+
+
+
 def dredscottvsanford():
     global info
     info = ""
     while info != "Done":
         global case
-        print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
+        infomake()
         if info == "Years and Justice":
             print("It started arguing February 11 1856 and decided March 6 1857 by the Taney Court")
             wait()
@@ -134,13 +157,17 @@ def dredscottvsanford():
             wait()
         else:
             print("That doesn't work")
+
+
+
+
+
+
 def expartemilligan():
     global info
     info = ""
     while info != "Done":
         global case
-        print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
         infomake()
         if info == "Years and Justice":
             print("This case was argued March 5 1866 and was decided April 3 1866 in the Chase court")
@@ -162,8 +189,16 @@ def expartemilligan():
             wait()
         else:
             print("That's not a command that's allowed")
+
+
+
+
+
+
+
 def plessyvferguson():
     global info
+    global case
     info = ""
     while info != "Done":
         infomake()
@@ -188,6 +223,13 @@ def plessyvferguson():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def schenkvus():
     global info
     info = ""
@@ -214,6 +256,14 @@ def schenkvus():
         else:
             print("You can't do that")
             wait()
+
+
+
+
+
+
+
+
 def korematsuvus():
     global info
     info = ""
@@ -240,6 +290,13 @@ def korematsuvus():
         else:
             print("You can't do that")
             wait()
+
+
+
+
+
+
+
 def brownvboardofeducation():
     global info
     info = ""
@@ -266,6 +323,13 @@ def brownvboardofeducation():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def plannedparenthoodvcasey():
     global info
     info = ""
@@ -292,6 +356,13 @@ def plannedparenthoodvcasey():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def webstervreproductivehealth():
     global info
     info = ""
@@ -318,6 +389,13 @@ def webstervreproductivehealth():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def gideonvwainright():
     global info
     info = ""
@@ -342,6 +420,13 @@ def gideonvwainright():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def mirandavarizona():
     global info
     info = ""
@@ -365,6 +450,13 @@ def mirandavarizona():
         elif info == "Constitutional Provisions":
             print("Fifth amendment")
             wait()
+
+
+
+
+
+
+
 def engelvvitale():
     global info
     info = ""
@@ -392,6 +484,13 @@ def engelvvitale():
         else:
             print("That isn't allowed")
             wait()
+
+
+
+
+
+
+
 def roevwade():
     global info
     info = ""
@@ -420,6 +519,13 @@ def roevwade():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def usvrichardnixon():
     global info
     info = ""
@@ -449,6 +555,13 @@ def usvrichardnixon():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def bakkevucregents():
     global info
     info = ""
@@ -472,6 +585,13 @@ def bakkevucregents():
         elif info == "Constitutional Provisions":
             print("The fourteenth amendment")
             wait()
+
+
+
+
+
+
+
 def bakervcarr():
     global info
     info = ""
@@ -501,6 +621,13 @@ def bakervcarr():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 def swannvcharlottemecklengerg():
     global info
     while info != "Done":
@@ -529,87 +656,114 @@ def swannvcharlottemecklengerg():
         else:
             print("That's not allowed")
             wait()
+
+
+
+
+
+
+
 while 1 == 1:
     print("Type what court case you want to observe or type CASES to see what cases you can observe")
     case = input("What case? ")
     if case == "CASES":
         print("""
-        Marbury v. Madison
-        McCulloch v Maryland
-        Gibbons v Ogden
-        Dred Scott v Sanford
-        Ex parte Milligan
-        Plessy v Ferguson
-        Schenck v US
-        Korematsu v US
-        Brown v Board of Education
-        Planned Parenthood v Casey
-        Webster v Reproductive Health
-        Gideon v Wainright
-        Miranda v Arizona
-        Engel v Vitale
-        Roe v Wade
-        US v Richard Nixon
-        Bakke v UC Regents
-        Baker v Carr
-        Swann v Charlotte-Mecklenberg
+    CASE NUMBER:            CASES:
+    M1                Marbury v. Madison
+    M2                McCulloch v Maryland
+    G1                Gibbons v Ogden
+    DS1               Dred Scott v Sanford
+    EPM1              Ex parte Milligan
+    PF1               Plessy v Ferguson
+    SUS1              Schenck v US
+    KUS1              Korematsu v US
+    BVB2              Brown v Board of Education
+    PP1               Planned Parenthood v Casey
+    W1                Webster v Reproductive Health
+    GVW1              Gideon v Wainright
+    MVA1              Miranda v Arizona
+    EVV1              Engel v Vitale
+    RVW1              Roe v Wade
+    USVRN1            US v Richard Nixon
+    BVUC1             Bakke v UC Regents
+    BVC1              Baker v Carr
+    SVCM1             Swann v Charlotte-Mecklenberg
         """)
-    elif case == "Marbury v Madison":
+    elif case == "Marbury v Madison" or case == "M1":
+        case = "Marbury v Madison"
         clear()
         marburyvmadison()
-    elif case == "Engel v Vitale":
+    elif case == "Engel v Vitale" or case == "EVV1":
+        case = "Engel v Vitale"
         clear()
         engelvvitale()
-    elif case == "McCulloch v Maryland":
-        clear
+    elif case == "McCulloch v Maryland" or case == "M2":
+        clear()
+        case = "McCulloch v Maryland"
         mccullochvmaryland()
-    elif case == "Gibbons v Ogden":
+    elif case == "Gibbons v Ogden" or case == "G1":
         clear()
+        case = "Gibbons vs Ogden"
         gibbonsvogden()
-    elif case == "Dred Scott v Sanford":
+    elif case == "Dred Scott v Sanford" or case == "DS1":
         clear()
+        case = "Dred Scott v Sanford"
         dredscottvsanford()
-    elif case == "Ex Parte Milligan":
+    elif case == "Ex Parte Milligan" or case == "EPM1":
         clear()
+        case = "Ex Parte Milligan"
         expartemilligan()
-    elif case == "Plessy v Ferguson":
+    elif case == "Plessy v Ferguson" or case == "PF1":
         clear()
+        case = "Plessy v Ferguson"
         plessyvferguson()
-    elif case == "Schenck v US":
+    elif case == "Schenck v US" or case == "SUS1":
         clear()
+        case = "Schenck v US"
         schenkvus()
-    elif case == "Korematsu v US":
+    elif case == "Korematsu v US" or case == "KUS1":
         clear()
+        case = "Korematsu v US"
         korematsuvus()
-    elif case == "Brown v Board of Education":
+    elif case == "Brown v Board of Education" or case == "BVB2":
         clear()
+        case = "Brown v Board of Education 2"
         brownvboardofeducation()
-    elif case == "Planned Parenthood v Casey":
+    elif case == "Planned Parenthood v Casey" or case == "PP1":
         clear()
+        case = "Planned Parenthood v Casey"
         plannedparenthoodvcasey()
-    elif case == "Webster v Reproductive Health":
+    elif case == "Webster v Reproductive Health" or case == "W1":
         clear()
+        case = "Webster v Reproductive Health"
         webstervreproductivehealth()
-    elif case == "Gideon v Wainright":
+    elif case == "Gideon v Wainright" or case == "GVW1":
         clear()
+        case = "Gideon v Wainright"
         gideonvwainright()
-    elif case == "Miranda v Arizona":
+    elif case == "Miranda v Arizona" or case == "MVA1":
         clear()
+        case = "Miranda v Arizona"
         mirandavarizona()
-    elif case == "Roe v Wade":
+    elif case == "Roe v Wade" or case == "RVW1":
         clear()
+        case = "Roe v Wade"
         roevwade()
-    elif case == "US v Richard Nixon":
+    elif case == "US v Richard Nixon" or case == "USVRN1":
         clear()
+        case = "US v Richard Nixon"
         usvrichardnixon()
-    elif case == "Bakke v UC Regents":
+    elif case == "Bakke v UC Regents" or case == "BVUC1":
         clear()
+        case = "Bakke v UC Regents"
         bakkevucregents()
-    elif case == "Baker v Carr":
+    elif case == "Baker v Carr" or case == "BVC1":
         clear()
+        case = "Baker v Carr"
         bakervcarr()
-    elif case == "Swann v Charlotte-Mecklenberg":
+    elif case == "Swann v Charlotte-Mecklenberg" or case == "SVCM1":
         clear()
+        case = "Swann v Charlotte-Mecklenberg"
         swannvcharlottemecklengerg()
     else:
         clear()

@@ -46,13 +46,14 @@ def marburyvmadison():
         elif info == "Why we care":
             print("This established judicial review which is the system that the supreme court uses when deciding whether or not something is constitutional")
             wait()
-        elif info == "Constituional Provisions":
+        elif info == "Constitutional Provisions":
             print("Section 13 of the judiciary act of 1789 was used as it conflicted with the article of the constitution which established the supreme court Article III Section 2")
             wait()
         else:
             print("That's not an option IDIOT")
 def mccullochvmaryland():
     global info
+    info = ""
     while info != "Done":
         print("What do you want to find out about McCulloch v. Maryland")
         info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or consitutuional provisions? If you want a new case type Done ")
@@ -77,6 +78,8 @@ def mccullochvmaryland():
         else:
             print("That's not a useable Command")
 def gibbonsvogden():
+    global info
+    info = ""
     while info != "Done":
         global case
         print("What do you want to find out about",case)
@@ -104,6 +107,8 @@ def gibbonsvogden():
             wait()
     infomake()
 def dredscottvsanford():
+    global info
+    info = ""
     while info != "Done":
         global case
         print("What do you want to find out about",case)
@@ -130,6 +135,7 @@ def dredscottvsanford():
             print("That doesn't work")
 def expartemilligan():
     global info
+    info = ""
     while info != "Done":
         global case
         print("What do you want to find out about",case)
@@ -157,7 +163,7 @@ def expartemilligan():
             print("That's not a command that's allowed")
 def plessyvferguson():
     global info
-    infomake()
+    info = ""
     while info != "Done":
         infomake()
         if info == "Years and Justice":
@@ -183,7 +189,7 @@ def plessyvferguson():
             wait()
 def schenckvus():
     global info
-    infomake()
+    info = ""
     while info != "Done":
         infomake()
         if info == "Years and Justice":
@@ -541,7 +547,7 @@ while 1 == 1:
         Gideon v Wainright
         Miranda v Arizona
         Engel v Vitale
-        Roe v Wade 
+        Roe v Wade
         US v Richard Nixon
         Bakke v UC Regents
         Baker v Carr
@@ -559,9 +565,9 @@ while 1 == 1:
     elif case == "Gibbons v Ogden":
         clear()
         gibbonsvogden()
-    elif case == "Dred Scott v Sandford":
+    elif case == "Dred Scott v Sanford":
         clear()
-        dredscottvsandford()
+        dredscottvsanford()
     elif case == "Ex Parte Milligan":
         clear()
         expartemilligan()

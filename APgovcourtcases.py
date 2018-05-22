@@ -4,8 +4,8 @@ Author: Riley Carpenter
 '''
 import os
 import sys
-info = "Not done"
 global info
+info = "Not done"
 global case
 def clear():
     if sys.platform == "linux" or sys.platform == "posix":
@@ -19,12 +19,13 @@ def infomake():
     global case
     global info
     print("What do you want to find out about",case)
-    info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or constitutional provisions? If you want a new case type Done ")
+    print("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
+    info = input("What do you want to know? ")	
 def marburyvmadison():
     global info
     while info != "Done":
         print("What do you want to find out about Marbury v Madison")
-        info = input("Do you want to know Years and Justice,  Details, Decision, Vote Totals, Why we care, or constitutional provisions? If you want a new case type Done ")
+        info = input("Do you want to know Years and Justice,  Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
         input()
         clear()
         if info == "Years and Justice":
@@ -83,7 +84,7 @@ def gibbonsvogden():
     while info != "Done":
         global case
         print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or constitutional provisions? If you want a new case type Done ")
+        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
         if info == "Years and Justice":
             print("It was argued Feb 4 - 9 1824 and was decided March 2 1824 in the Marshall Court")
             wait()
@@ -112,7 +113,7 @@ def dredscottvsanford():
     while info != "Done":
         global case
         print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or constitutional provisions? If you want a new case type Done ")
+        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
         if info == "Years and Justice":
             print("It started arguing February 11 1856 and decided March 6 1857 by the Taney Court")
             wait()
@@ -139,7 +140,7 @@ def expartemilligan():
     while info != "Done":
         global case
         print("What do you want to find out about",case)
-        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or constitutional provisions? If you want a new case type Done ")
+        info = input("Do you want to know Years and Justice, Details, Decision, Vote Totals, Why we care, or Constitutional Provisions? If you want a new case type Done ")
         infomake()
         if info == "Years and Justice":
             print("This case was argued March 5 1866 and was decided April 3 1866 in the Chase court")
@@ -175,7 +176,7 @@ def plessyvferguson():
         elif info == "Decision":
             print("Seperate but equal is constitutional if the facilities are completely equal")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("7-1 for Ferguson against plessy")
             wait()
         elif info == "Why we care":
@@ -187,7 +188,7 @@ def plessyvferguson():
         else:
             print("That's not allowed")
             wait()
-def schenckvus():
+def schenkvus():
     global info
     info = ""
     while info != "Done":
@@ -201,13 +202,13 @@ def schenckvus():
         elif info == "Decision":
             print("The espionage act does not violate the first amendment because of the fact that america is in a war at the current moment")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("Unanimous decision for the united states")
             wait()
         elif info == "Why we care":
             print("It allowed the US to create laws limiting free speech based on the situation the country was facing")
             wait()
-        elif info == "Constitutional provisions":
+        elif info == "Constitutional Provisions":
             print("The first amendment")
             wait()
         else:
@@ -227,7 +228,7 @@ def korematsuvus():
         elif info == "Decision":
             print("The need to protect against espionage is greater than an individuals rights so Korematsu was arrested")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("6-3 for United States")
             wait()
         elif info == "Why we care":
@@ -279,13 +280,13 @@ def plannedparenthoodvcasey():
         elif info == "Decision":
             print("Any law that would place an undue burden on women to get an abortion is unconstitutional and this in turn upheld roe v wade")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("5-4 decision for planned parenthood")
             wait()
         elif info == "Why we care":
             print("This upheld roe v wade and made it easier for women to get an abortion")
             wait()
-        elif info == "Constitutional provisons":
+        elif info == "Constitutional Provisions":
             print("Roe v Wade was used")
             wait()
         else:
@@ -305,7 +306,7 @@ def webstervreproductivehealth():
         elif info == "Decision":
             print("None of the argued parts of the bill were unconstitional")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("5-4 for Webster")
             wait()
         elif info == "Why we care":
@@ -336,7 +337,7 @@ def gideonvwainright():
             wait()
         elif info == "Why we care":
             print("This established the right to counsel in all states and federal courts therefore it was a very important decision. It also implied that the states have to give everyone equal rights throught the fourteenth amendment")
-        elif info == "Constitutional provisions":
+        elif info == "Constitutional Provisions":
             print("The fourteenth amendment for the second part and the sixth amendment for the first part")
         else:
             print("That's not allowed")
@@ -379,7 +380,7 @@ def engelvvitale():
         elif info == "Decision":
             print("It's unconstitutional")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("6-1 for Engel")
             wait()
         elif info == "Why we care":
@@ -462,7 +463,7 @@ def bakkevucregents():
         elif info == "Decision":
             print("Race can be used only with other qualifiers not exclusively by itself")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("8-1 decision for Bakke")
             wait()
         elif info == "Why we care":
@@ -491,7 +492,7 @@ def bakervcarr():
         elif info == "Why we care":
             print("This reestablished that the courts have power over the state governments")
             wait()
-        elif info == "Constitutional provisions":
+        elif info == "Constitutional Provisions":
             print("Fourteenth Amendment")
             wait()
         elif info == "Done":
@@ -500,7 +501,7 @@ def bakervcarr():
         else:
             print("That's not allowed")
             wait()
-def swannvcharlottemecklenberg():
+def swannvcharlottemecklengerg():
     global info
     while info != "Done":
         infomake()
@@ -513,7 +514,7 @@ def swannvcharlottemecklenberg():
         elif info == "Decision":
             print("The court held that they needed to reintegrate immediately")
             wait()
-        elif info == "Vote totals":
+        elif info == "Vote Totals":
             print("Unanimous Decison")
             wait()
         elif info == "Why we care":
@@ -539,7 +540,7 @@ while 1 == 1:
         Dred Scott v Sanford
         Ex parte Milligan
         Plessy v Ferguson
-        Schenk v US
+        Schenck v US
         Korematsu v US
         Brown v Board of Education
         Planned Parenthood v Casey
